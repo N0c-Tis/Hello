@@ -1,0 +1,642 @@
+/* =========================
+   BASIC PAGE
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #c2d6ad, #c2d6ad, #c2d6ad);
+    color: #31543b;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   BACKGROUND
+========================= */
+
+.background {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -5;
+}
+
+.star {
+    position: absolute;
+    font-size: 24px;
+    opacity: 0.7;
+    animation: float 4s ease-in-out infinite;
+}
+
+.star1 {
+    top: 15%;
+    left: 10%;
+}
+
+.star2 {
+    top: 30%;
+    right: 15%;
+    animation-delay: 1s;
+}
+
+.star3 {
+    bottom: 20%;
+    left: 25%;
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+
+/* =========================
+   NATURE BACKGROUND
+========================= */
+
+.nature-background {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -3;
+}
+
+
+/* =========================
+   BUTTERFLIES
+========================= */
+
+.butterfly {
+    position: fixed;
+    font-size: 28px;
+    pointer-events: none;
+    z-index: -2;
+}
+
+.butterfly1 {
+    top: 15%;
+    left: 5%;
+    animation: butterflyMove1 10s linear infinite;
+}
+
+.butterfly2 {
+    top: 35%;
+    left: 20%;
+    animation: butterflyMove2 12s linear infinite;
+}
+
+.butterfly3 {
+    top: 20%;
+    right: 15%;
+    animation: butterflyMove3 11s linear infinite;
+}
+
+.butterfly4 {
+    top: 60%;
+    left: 10%;
+    animation: butterflyMove4 13s linear infinite;
+}
+
+.butterfly5 {
+    top: 70%;
+    right: 20%;
+    animation: butterflyMove5 14s linear infinite;
+}
+
+.butterfly6 {
+    top: 45%;
+    right: 5%;
+    animation: butterflyMove6 12s linear infinite;
+}
+
+.butterfly7 {
+    top: 80%;
+    left: 35%;
+    animation: butterflyMove7 15s linear infinite;
+}
+
+.butterfly8 {
+    top: 10%;
+    right: 35%;
+    animation: butterflyMove8 13s linear infinite;
+}
+
+@keyframes butterflyMove1 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(100px, -50px) rotate(10deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes butterflyMove2 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-80px, 70px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes butterflyMove3 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(80px, 60px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes butterflyMove4 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(70px, -70px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes butterflyMove5 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-100px, -40px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes butterflyMove6 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-60px, 80px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes butterflyMove7 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(90px, -60px); }
+    100% { transform: translate(0, 0); }
+}
+
+@keyframes butterflyMove8 {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(-90px, 50px); }
+    100% { transform: translate(0, 0); }
+}
+
+
+/* =========================
+   FLOATING LEAVES
+========================= */
+
+.leaf {
+    position: fixed;
+    font-size: 28px;
+    pointer-events: none;
+}
+
+.leaf1 {
+    top: 10%;
+    left: 15%;
+    animation: leafFloat1 8s ease-in-out infinite;
+}
+
+.leaf2 {
+    top: 25%;
+    right: 10%;
+    animation: leafFloat2 10s ease-in-out infinite;
+}
+
+.leaf3 {
+    top: 50%;
+    left: 5%;
+    animation: leafFloat1 9s ease-in-out infinite;
+}
+
+.leaf4 {
+    bottom: 20%;
+    right: 15%;
+    animation: leafFloat2 11s ease-in-out infinite;
+}
+
+.leaf5 {
+    top: 70%;
+    left: 25%;
+    animation: leafFloat1 12s ease-in-out infinite;
+}
+
+.leaf6 {
+    bottom: 10%;
+    right: 35%;
+    animation: leafFloat2 9s ease-in-out infinite;
+}
+
+.leaf7 {
+    top: 40%;
+    right: 35%;
+    animation: leafFloat1 10s ease-in-out infinite;
+}
+
+@keyframes leafFloat1 {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(30px, -25px) rotate(20deg);
+    }
+}
+
+@keyframes leafFloat2 {
+    0%, 100% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    50% {
+        transform: translate(-25px, 30px) rotate(-20deg);
+    }
+}
+
+
+/* =========================
+   WIND GIFS
+========================= */
+
+.wind {
+    position: fixed;
+    width: 120px;
+    pointer-events: none;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.wind1 {
+    top: 20%;
+    left: -20px;
+    animation: windMove1 12s linear infinite;
+}
+
+.wind2 {
+    top: 55%;
+    right: -20px;
+    animation: windMove2 14s linear infinite;
+}
+
+.wind3 {
+    bottom: 10%;
+    left: 10%;
+    animation: windMove3 16s linear infinite;
+}
+
+@keyframes windMove1 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes windMove2 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100vw);
+    }
+}
+
+@keyframes windMove3 {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(80vw);
+    }
+}
+
+
+/* =========================
+   PETALS
+========================= */
+
+.petal {
+    position: fixed;
+    pointer-events: none;
+    opacity: 0.7;
+    font-size: 20px;
+}
+
+.petal1 {
+    top: 20%;
+    left: 30%;
+}
+
+.petal2 {
+    top: 40%;
+    right: 25%;
+}
+
+.petal3 {
+    bottom: 25%;
+    left: 40%;
+}
+
+.petal4 {
+    bottom: 15%;
+    right: 10%;
+}
+
+.petal {
+    animation: particleFloat 6s ease-in-out infinite;
+}
+
+@keyframes particleFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    width: min(90%, 700px);
+    margin: auto;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================
+   SCREEN / CARD
+========================= */
+
+.screen {
+    width: 100%;
+    padding: 45px 35px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.82);
+    border-radius: 30px;
+
+    box-shadow:
+            0 15px 40px rgba(70, 100, 70, 0.15);
+
+    backdrop-filter: blur(8px);
+
+    display: none;
+}
+
+.screen.active {
+    display: block;
+    animation: appear 0.6s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   HELLO TITLE
+========================= */
+
+.hello-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.hello-title h1 {
+    margin: 0;
+    font-size: 64px;
+    color: #4f8b57;
+    animation: helloBounce 3s ease-in-out infinite;
+}
+
+.Hii-character {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.Hii-character:hover {
+    transform: scale(1.08) rotate(3deg);
+}
+
+@keyframes helloBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 20px 0 30px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    border: none;
+    padding: 14px 32px;
+
+    border-radius: 25px;
+
+    background: #7dbb82;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(70, 110, 70, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   CAT STICKER
+========================= */
+
+.sticker-container {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+    z-index: 10;
+}
+
+.cute-sticker {
+    width: 100px;
+    height: auto;
+
+    animation: stickerFloat 3s ease-in-out infinite;
+
+    transition: transform 0.2s ease;
+}
+
+.cute-sticker:hover {
+    transform: scale(1.08);
+}
+
+.sticker-label {
+    background: white;
+    padding: 7px 12px;
+    border-radius: 15px;
+
+    font-size: 13px;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    margin-bottom: 5px;
+
+    animation: labelBounce 2s ease-in-out infinite;
+}
+
+@keyframes stickerFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes labelBounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-4px);
+    }
+}
+
+
+/* =========================
+   MUSIC BUTTON
+========================= */
+
+.music-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    padding: 10px 16px;
+
+    border-radius: 20px;
+
+    font-size: 14px;
+
+    background: rgba(255, 255, 255, 0.85);
+    color: #4f7453;
+
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+    z-index: 20;
+}
+
+.music-button:hover {
+    background: white;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .screen {
+        padding: 35px 20px;
+    }
+
+    .hello-title h1 {
+        font-size: 48px;
+    }
+
+    .Hii-character {
+        width: 75px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .cute-sticker {
+        width: 75px;
+    }
+
+    .sticker-container {
+        right: 12px;
+        bottom: 12px;
+    }
+
+    .music-button {
+        top: 12px;
+        right: 12px;
+    }
+
+    .butterfly {
+        font-size: 22px;
+    }
+
+    .leaf {
+        font-size: 22px;
+    }
+}

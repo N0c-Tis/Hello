@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HelloThere! </title>
+
+    <link rel="icon" type="image/gif" href="images/Cat Dancing Sticker.gif">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background">
+    <span class="star star1">✦</span>
+    <span class="star star2">✧</span>
+    <span class="star star3">✦</span>
+</div>
+
+<!-- MOVING NATURE BACKGROUND -->
+
+<div class="butterfly-layer">
+    <!-- Butterflies -->
+    <div class="butterfly butterfly1">🦋</div>
+    <div class="butterfly butterfly2">🦋</div>
+    <div class="butterfly butterfly3">🦋</div>
+    <div class="butterfly butterfly4">🦋</div>
+    <div class="butterfly butterfly5">🦋</div>
+    <div class="butterfly butterfly6">🦋</div>
+    <div class="butterfly butterfly7">🦋</div>
+    <div class="butterfly butterfly8">🦋</div>
+</div>
+
+<div>
+    <!-- Wind GIFs -->
+    <img src="images/leaves.gif" class="wind wind1" alt="">
+    <img src="images/leaves.gif" class="wind wind2" alt="">
+    <img src="images/leaves.gif" class="wind wind3" alt="">
+</div>
+
+<div class="nature-background">
+
+
+
+
+
+    <!-- Floating leaves -->
+    <div class="leaf leaf1">🍃</div>
+    <div class="leaf leaf2">🍃</div>
+    <div class="leaf leaf3">🍃</div>
+    <div class="leaf leaf4">🍃</div>
+    <div class="leaf leaf5">🍃</div>
+    <div class="leaf leaf6">🍃</div>
+    <div class="leaf leaf7">🍃</div>
+
+    <!-- Small floating petals -->
+    <div class="petal petal1">✿</div>
+    <div class="petal petal2">✦</div>
+    <div class="petal petal3">✧</div>
+    <div class="petal petal4">✿</div>
+
+</div>
+
+<main class="container">
+
+    <!-- INTRO -->
+    <section id="intro" class="screen active">
+
+        <div class="hello-title">
+            <h1>Hii!</h1>
+
+            <img
+                    src="images/Hiii.png"
+                    alt="Cute green character waving"
+                    class="Hii-character"
+                    onclick="playHiSound()"
+            >
+        </div>
+
+        <p>
+            .
+            <br>
+            Istorbo lang. ☁️
+        </p>
+
+        <button onclick="showScreen('message')">
+            Hello!
+        </button>
+
+    </section>
+
+
+    <!-- SECOND CARD -->
+    <section id="message" class="screen">
+
+        <div class="hello-title">
+            <h1>Hello! ELIZAA!</h1>
+        </div>
+
+        <p>
+            It's nice meeting you. 🌿
+            <br>
+            JP pala. <br>Gusto lang namang sabihin na ang ganda mo.
+            <br>
+            Yun lang, Good Night!. 🌃
+        </p>
+
+        <button onclick="showScreen('message')">
+            Go Back
+        </button>
+
+    </section>
+</main>
+
+<!-- CUTE STICKER -->
+<div class="sticker-container" onclick="playCatSound()">
+    <div class="sticker-label">Tap me! 🐾</div>
+
+    <img
+            src="images/Cat Dancing Sticker.gif"
+            alt="Cute cat sticker"
+            class="cute-sticker"
+    >
+</div>
+
+<!-- CAT SOUND -->
+<audio id="catSound" src="sfx/scuba_Cat.mp3"></audio>
+<!-- Hmmp sound-->
+<audio id="HiiSound" src="sfx/Hmm.ogg"></audio>
+<!-- EATING SOUND -->
+<audio id="eatSound" src="sfx/eating chip.mp3" preload="auto"></audio>
+
+<!-- MUSIC BUTTON -->
+<button id="musicButton" class="music-button" onclick="toggleMusic()">
+    🎵 Muted
+</button>
+<!-- Background Music-->
+<audio id="backgroundMusic" loop>
+    <source src="sfx/BGmusic.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
